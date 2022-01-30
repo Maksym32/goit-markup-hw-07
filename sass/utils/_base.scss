@@ -39,7 +39,15 @@ ul {
   list-style: none;
 }
 .section {
-  padding: 94px 0; 
+  padding: 94px 0;
+  
+  &__no-pading-top {
+    padding-top: 0;
+  }
+
+  &__team-background {
+    background-color: $secondary-background-color;
+  }
 }
 
 .section__title {

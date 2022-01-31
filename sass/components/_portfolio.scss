@@ -1,12 +1,12 @@
-.filter-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter-list__item + .filter-list__item {
+.filter__item + .filter__item {
   margin-left: 8px;
 }
-.filter-list__button {
+.filter__button {
   display: block;
   padding: 6px 22px;
   color: $primary-text-color;
@@ -29,19 +29,19 @@
   }              
 }
 
-.portfolio-list {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
-.portfolio-list__item {
+.portfolio__item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 90px); 
 }
 
-.portfolio-list__link {
+.portfolio__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
@@ -52,17 +52,17 @@
   }
 }
 
-.sup-thumb {
+.portfolio__thumb {
   position: relative;
   overflow: hidden;
 }
-.sup-thumb__text {
+.portfolio__overlay-text {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: $white-color;
 }
-.sup-thumb__overlay {
+.portfolio__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -74,23 +74,23 @@
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .portfolio-list__link:hover &,
-  .portfolio-list__link:focus & {
+  .portfolio__link:hover &,
+  .portfolio__link:focus & {
     transform: translateY(0);
   }
 }
 
-.sub-thumb {
+.portfolio__box {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
-.sub-thumb__title {
+.portfolio__title {
   color: $primary-text-color;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.sub-thumb__text {
+.portfolio__text {
   margin-top: 4px;
   color: $secondary-text-color;
   font-size: 16px;

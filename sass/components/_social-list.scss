@@ -24,7 +24,7 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__link:hover, &__:focus {
+  &__link:hover, &__link:focus {
     background-color: $accent-color;
     color: $white-color;
   }
@@ -38,6 +38,7 @@
     fill: currentColor;
   }
 }
+
 .social-box {
   margin-left: 70px;
 
